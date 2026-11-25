@@ -2,6 +2,8 @@
 // Node 22, standard library only. No network, no fonts, no external files.
 // Output: $MAKEFUN_OUTPUT_DIR/entry.png (default /output/entry.png).
 // Deterministic: same input, same bytes, every run.
+// Rev. 2 (2026-11-25): casualty figures and one name corrected per
+// Reuters / AP / ICBL sources; layout, font and colours untouched.
 
 import { mkdirSync, writeFileSync } from 'node:fs';
 import { join } from 'node:path';
@@ -217,20 +219,20 @@ const STORIES: Story[] = [
   {
     tag: 'GAZA - MIDDLE EAST',
     accent: [180, 35, 24],
-    headline: "ISRAELI STRIKE KILLS HAMAS SECURITY CHIEF",
-    body: 'Naeem Abu Nahal killed in Gaza City airstrikes, despite a ceasefire in place since last year.',
+    headline: "ISRAELI STRIKE KILLS HAMAS INTERNAL SECURITY CHIEF",
+    body: 'Naeem Abu Nahel killed in Gaza City airstrikes, despite 2025 ceasefire, strikes continue.',
   },
   {
     tag: 'UKRAINE - EUROPE',
     accent: [23, 92, 211],
     headline: 'RUSSIAN STRIKE HITS ZAPORIZHZHIA FLATS',
-    body: 'Overnight attack on an apartment block kills 2 and wounds more than 40, including four children.',
+    body: 'Overnight attack on an apartment block kills 2 and injures 48, including 4 children.',
   },
   {
     tag: 'RIYADH - GULF',
     accent: [181, 71, 8],
     headline: "HOUTHI STRIKE HITS RIYADH'S TALLEST TOWER",
-    body: 'PIF Tower struck for the second time in a week; 11 people injured.',
+    body: 'PIF Tower struck for the second time in a week - at least 11 injured.',
   },
   {
     tag: 'HANOI - ASIA',
@@ -241,8 +243,8 @@ const STORIES: Story[] = [
   {
     tag: 'WORLD - GLOBAL',
     accent: [105, 65, 198],
-    headline: 'LANDMINE DEATHS HIT FIVE-YEAR HIGH',
-    body: '7,000 casualties in 2025, the most in five years; Myanmar and Syria worst hit.',
+    headline: 'LANDMINE CASUALTIES HIT FIVE-YEAR HIGH',
+    body: '7,000 casualties in 2025, the most in five years; Myanmar highest; Syria also surges.',
   },
 ];
 
